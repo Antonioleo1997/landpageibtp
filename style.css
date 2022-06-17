@@ -1,0 +1,239 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+
+*{
+    margin:0;
+    padding:0;
+    font-family: 'Roboto', sans-serif;;
+}
+
+.container{
+    margin: auto;
+    font-family: 'Roboto';
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+header{
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
+    height: 7vh;
+    padding: 5px;
+}
+
+header .soon{
+    display: flex;
+    width: 30%;
+    justify-content: center;
+    height: 100%;
+}
+
+
+
+header h1{
+    width: 70%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 4vw;
+}
+
+.registration{
+    display: flex;
+    flex-direction: column;
+    background-color: #093984;
+    align-items: center;
+    color: white;
+    padding: px 0;
+    font-size:10px
+}
+
+.registration h2{
+    font-size: 3vw;
+    width: 100%;
+    text-align: center;
+    justify-content: center;
+    
+}
+
+.registration form{
+    width: 95%;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    margin: 10px auto;
+}
+
+.registration-item{
+    display: flex;
+    flex-direction: column;
+    margin: 0 5px;
+}
+
+.registration-item input, select{
+    width: 100%;
+    height: 20px;
+}
+
+select{
+    height:25px;
+}
+
+.submit{
+    background-color: #FF6347;
+    padding: 5px;
+    color: white;
+    border: none;
+}
+
+.wraper{
+    display: flex;
+    width: 95%;
+    margin: 10px auto 0;
+}
+
+.wraper .wrap-img{
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.justify-content-center{
+    align-items: center;
+    text-align: center;
+}
+
+.justify-content-flex-start{
+    align-items:flex-start;
+}
+
+.width50{
+    width: 50%;
+}
+
+.wrap-content{
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.wrap-content h1{
+    font-size: 3vw;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.wrap-content img, p{
+    width: 80%;
+    margin: 10px 0;
+}
+
+.wrap-content p{
+    font-size: 2vw;
+}
+
+.wrap-img img{
+    width: 100%;
+}
+
+.o1{
+    order:1;
+}
+
+.o2{
+    order:2;
+}
+
+li{
+    margin-left: 15px;
+}
+
+ul{
+    font-size: 2vw;
+}
+
+.wraper .wrap-img-cursos{
+    flex-grow: 1;
+    align-content: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.wrap-img-cursos img{
+    width: 45%;
+    margin-bottom: 5px;
+    cursor:pointer;
+}
+
+.wrap-img-cursos img:hover{
+    position: absolute;
+    margin-bottom: 5px;
+}
+
+footer{
+    width: 100%;
+    background-color: #093984;
+    padding: 10px 0;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+footer h1{
+    font-size: 24px;
+}
+footer main{
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    font-size: 12px;
+    text-align: center;
+    width: 100%;
+}
+
+main .social-media{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+}
+
+main .contacts{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+main nav{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+    margin: 5px 0;
+}
+
+main p{
+    margin: 2px 0;
+    width: 100%;
+}
+
+main img{
+    width: 2em;
+    margin-right: 5px;
+    
+}
