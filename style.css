@@ -4,7 +4,12 @@
 *{
     margin:0;
     padding:0;
-    font-family: 'Roboto', sans-serif;;
+    font-family: 'Roboto', sans-serif;
+    text-decoration: none;
+}
+
+body{
+    font-size: 12px;
 }
 
 .container{
@@ -20,7 +25,7 @@ header{
     flex-wrap: nowrap;
     justify-content: space-between;
     align-items: center;
-    height: 7vh;
+    height: 50px;
     padding: 5px;
 }
 
@@ -38,7 +43,7 @@ header h1{
     display: flex;
     align-items: center;
     justify-content: center;
-    font-size: 4vw;
+    font-size: 3rem;
 }
 
 .registration{
@@ -47,13 +52,13 @@ header h1{
     background-color: #093984;
     align-items: center;
     color: white;
-    padding: px 0;
+    padding: 10px 0;
     font-size:10px
 }
 
 .registration h2{
-    font-size: 3vw;
-    width: 100%;
+    font-size: 2rem;
+    width: 80%;
     text-align: center;
     justify-content: center;
     
@@ -102,6 +107,13 @@ select{
     justify-content: center;
 }
 
+.wrap-content-h1-borda::before{
+    content: "";
+    width: 3px;
+    height: 50px;
+    margin-right: 5px;
+    background-color: #093984;
+}
 .justify-content-center{
     align-items: center;
     text-align: center;
@@ -126,6 +138,7 @@ select{
     font-size: 3vw;
     display: flex;
     flex-wrap: wrap;
+    color: #093984;
 }
 
 .wrap-content img, p{
@@ -133,8 +146,14 @@ select{
     margin: 10px 0;
 }
 
+.wrap-content img{
+    width: 100%;
+    margin: 10px 0;
+    box-shadow: black 1px 1px 10px;
+}
+
 .wrap-content p{
-    font-size: 2vw;
+    font-size: 1rem;
 }
 
 .wrap-img img{
@@ -154,15 +173,36 @@ li{
 }
 
 ul{
-    font-size: 2vw;
+    font-size: 1rem;
 }
 
 .wraper .wrap-img-cursos{
     flex-grow: 1;
+    width: 50%;
     align-content: center;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
+}
+
+.wraper .wrap-img-cursos{
+    flex-grow: 1;
+    width: 50%;
+    align-content: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.wraper a {
+    padding: 10px;
+    font-size: 1.5rem;
+    background-color: #FF6347;
+    color: white;
+    width: 100%;
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 20px;
 }
 
 .wrap-img-cursos img{
@@ -174,6 +214,7 @@ ul{
 .wrap-img-cursos img:hover{
     position: absolute;
     margin-bottom: 5px;
+    width: 30%;
 }
 
 footer{
@@ -236,4 +277,87 @@ main img{
     width: 2em;
     margin-right: 5px;
     
+}
+
+@media (max-width:970px) {
+    header h1{
+        font-size: 2rem;
+    }
+
+    .registration h2{
+        font-size: 1.5rem;
+        width: 80%;
+        
+    }
+
+    .wrap-content-h1-borda::before{
+        height: 30px;
+    }
+
+    .wraper a {
+        font-size: 1rem;
+        margin-top: 20px;
+    }
+
+    .wrap-content p, ul{
+        font-size: 0.8rem;
+    }
+
+    
+}
+
+
+@media (max-width:731px) {
+    header h1{
+        font-size: 1.5rem;
+    }
+
+    .wrap-content p, ul{
+        font-size: 0.6rem;
+    }
+    
+
+    .wraper a {
+        font-size: 0.6rem;
+        margin-top: 10px;
+    }
+    
+
+    .registration h2{
+        font-size: 1.0rem;
+        width: 80%;
+        
+    }
+
+    .wrap-content-h1-borda::before{
+        height: 20px;
+    }
+
+    header{
+        height: 30px;
+    }
+}
+
+@media (max-width:496px) {
+    header h1{
+        font-size: 1rem;
+    }
+
+    .wrap-content-h1-borda::before{
+        height: 10px;
+    }
+
+    .registration h2{
+        font-size: 0.7rem;
+        width: 95%;
+    }
+
+    .wraper a {
+        font-size: 0.4rem;
+        margin-top: 5px;
+    }
+
+    .wrap-content p, ul{
+        font-size: 0.6rem;
+    }
 }
